@@ -1,0 +1,127 @@
+<section id="newRental">
+  <div class="bwm-form">
+    <div class="row">
+      <div class="col-md-5">
+        <h1 class="page-title">Create Rental</h1>
+        <form #rentalForm="ngForm">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="form-control"
+              required
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              class="form-control"
+              required
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input
+              type="text"
+              name="street"
+              id="street"
+              class="form-control"
+              required
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select
+              name="category"
+              id="category"
+              class="form-control"
+              required
+              ngModel
+            ></select>
+          </div>
+          <div class="form-group">
+            <label for="city">category</label>
+            <input type="text" name="street" id="str" required />
+          </div>
+          <div class="form-group">
+            <label for="bedrooms">Bedrooms</label>
+            <input
+              type="number"
+              name="bedrooms"
+              id="bedrooms"
+              class="form-control"
+              required
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              rows="5"
+              name="description"
+              id="description"
+              class="form-control"
+              style="resize: none"
+              required
+              ngModel
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="dailyRate">Daily Rate</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input
+                type="number"
+                name="dailyRate"
+                id="dailyRate"
+                class="form-control"
+                required
+                ngModel
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="form-control"
+              required
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="shared">Shared</label>
+            <input
+              type="checkbox"
+              name="shared"
+              id="shared"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="button" class="btn btn-bwm">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6 ml-auto">
+        <div class="image-container">
+          <h2 class="catchphrase">
+            Hundreds of awesome places in reach of few clicks.
+          </h2>
+          <img src="assets/images/create-rental.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
