@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  formData: any = { username: 'Filip' };
+  formData: any = {};
   errors: any[] = [];
 
   constructor(private auth: AuthService,

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable()
 export class AuthService {
 
@@ -17,5 +16,9 @@ export class AuthService {
     public login(userData: any): Observable<any> {
         return this.http.post('api/v1/users/auth', userData).pipe(map(
             (token: string) => token));
+    }
+
+    public isAuthenticated(): boolean {
+        return false;
     }
 }  

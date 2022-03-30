@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { RentalComponent } from './rental.component';
 import { RentalListComponent } from './rental-list/rental-list.component';
 import { RentalCreateComponent } from './rental-create/rental-create.component';
+import { RentalDetailComponent } from './rental-detail/rental-detail.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
 ];
 @NgModule({
-  declarations: [RentalComponent, RentalListComponent, RentalCreateComponent],
+  declarations: [RentalComponent, RentalListComponent, RentalCreateComponent, RentalDetailComponent],
   imports: [CommonModule, FormsModule, RouterModule.forChild(routes)],
 })
 export class RentalModule {}
