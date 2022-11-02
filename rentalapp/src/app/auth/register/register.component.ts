@@ -3,13 +3,13 @@ import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-register',
+  selector: 'bwm-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
 
-  formData: any = {};
+  formData: any = { username: 'Filip' };
   errors: any[] = [];
 
   constructor(private auth: AuthService,
