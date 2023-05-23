@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-
   formData: any = { username: 'Filip' };
   errors: any[] = [];
 
@@ -25,6 +24,6 @@ export class RegisterComponent implements OnInit {
       },
       (errorResponse) => {
         this.errors = errorResponse.error.errors;
-      })
+      });
   }
 }
